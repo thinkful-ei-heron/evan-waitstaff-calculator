@@ -84,7 +84,7 @@ form {
 
 .buttons {
     text-align: center;
-    margin: 12% 0 0 0;
+    margin: 8% 0 0 0;
 }
 
 .cancel-button {
@@ -133,4 +133,21 @@ form {
     position: relative;
     bottom: 0px;
     right: -73.5vw;
+}
+
+.hidden-warning {
+    margin-top: 0%;
+    font-size: 1.3rem;
+    color: red;
+    display: none;
+}
+
+.showing-warning {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.3rem;
+    color: red;
+    position: absolute;
+    top: 63vh;
+    left: 20.5vw;
 }
