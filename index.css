@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.js-main {
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    margin: 5vh 7vw 5vh 7vw;
+    min-height: 70vh;
+}
+
+.meal {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.charges {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.earnings {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 2vh;
+    background: rgba(128, 128, 128, 0.151);
+    margin: 0;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    font-size: 2.4rem;
+}
+
+form {
+    text-align: center;
+    margin: 6vh;
+    font-size: 1.8rem;
+}
+
+.meal-price-entry {
+    margin: 2vh;
+    padding: 1vh;
+}
+
+.tax-rate-entry {
+    margin: 2vh;
+    padding: 1vh;
+}
+
+.tip-percentage-entry {
+    margin: 2vh;
+    padding: 1vh;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20% 0 0 0;
+}
+
+.cancel-button {
+    border: 1px black solid;
+    padding: 4% 8% 4% 8%;
+    display: inline-block;
+    margin: 1% 5% 1% 5%;
+    background-color: rgba(128, 128, 128, 0.178);
+}
+
+.submit-button {
+    border: 1px black solid;
+    padding: 4% 8% 4% 8%;
+    display: inline-block;
+    margin: 1% 5% 1% 5%;
+    background-color: rgba(128, 128, 128, 0.178);
+}
+
+.math-input {
+    border-bottom: 1px solid black;
+    margin: 5% 50% 2% 10%;
+}
+
+.total {
+    margin-left: 10%
+}
+
+.math {
+    font-size: 1.8rem;
+}
+
+.final-earnings {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 4vh auto auto;
+}
