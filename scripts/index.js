@@ -64,11 +64,9 @@ function handleSubmit() {
         const basePrice = $('#meal-price').val();
         meal.setPrice(parseFloat(basePrice));
         const taxRate = $('#tax-rate').val();
-        const editedTaxRate = taxRate/100;
-        meal.setTaxRate(parseFloat(editedTaxRate));
+        meal.setTaxRate(parseFloat(taxRate));
         const tipPercentage = $('#tip-percentage').val();
-        const editedTipPercentage = tipPercentage/100;
-        meal.setTipPercentage(parseFloat(editedTipPercentage));
+        meal.setTipPercentage(parseFloat(tipPercentage));
         meal.calculate();
         earnings.calculate();
         render();

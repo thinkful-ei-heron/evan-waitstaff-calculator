@@ -12,11 +12,17 @@ function setPrice (basePrice) {
 }
 
 function setTaxRate (taxRate) {
-    store.taxRate = taxRate;
+    if (taxRate >= 1) {
+        return store.taxRate = taxRate/100;
+    }
+    else return store.taxRate = taxRate;
 }
 
 function setTipPercentage (tipPercentage) {
-    store.tipPercentage = tipPercentage;
+    if (tipPercentage >= 1) {
+        return store.tipPercentage = tipPercentage/100;
+    }
+    else return store.tipPercentage = tipPercentage;
 }
 
 function calculate() {
