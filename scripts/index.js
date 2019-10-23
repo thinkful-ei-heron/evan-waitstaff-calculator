@@ -74,7 +74,15 @@ function handleSubmit() {
 }
 
 function handleCancel() {
-    $('#js-main').on('click ')
+    $('#js-main').on('click', '#cancel-button', function(event){
+        event.preventDefault();
+        let priceInput = document.getElementById('meal-price');
+        priceInput.value = '';
+        let taxInput = document.getElementById('tax-rate');
+        taxInput.value = '';
+        let tipInput = document.getElementById('tip-percentage');
+        tipInput.value = '';
+    });
 }
 
 //handles all main functions
