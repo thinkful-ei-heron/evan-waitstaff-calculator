@@ -29,7 +29,14 @@ function calculateNewCharges() {
     setTotal (charges.subTotal + charges.tip);
 }
 
+function reset () {
+    charges.subTotal=0;
+    charges.tip=0;
+    charges.total=0;
+}
+
 export default {
+    reset,
     charges,
     calculateNewCharges
 };

@@ -123,3 +123,14 @@ form {
     text-align: center;
     margin: 4vh auto auto;
 }
+
+.reset-button {
+    border: 1px black solid;
+    padding: 4% 8% 4% 8%;
+    margin: 0% 5% 1% 5%;
+    background-color: rgba(128, 128, 128, 0.178);
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 0px;
+    right: -73.5vw;
+}

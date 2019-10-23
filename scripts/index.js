@@ -53,6 +53,8 @@ function render() {
                 <p>Average Tip Per Meal: ${earnings.store.tipPerMeal}</p>    
             </section>
         </fieldset>
+
+        <button class="reset-button" id="reset-button">Reset</button>
     </section>`;
     $('.js-main').html(htmlText);
 }
@@ -85,10 +87,20 @@ function handleCancel() {
     });
 }
 
+function handleReset() {
+    $('#js-main').on('click','#reset-button', function(event){
+        event.preventDefault();
+        earnings.reset();
+        charges.reset();
+        render();
+    });
+}
+
 //handles all main functions
 function main() {
     handleSubmit();
     handleCancel();
+    handleReset();
     initialize();
 }
 
