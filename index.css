@@ -68,12 +68,12 @@ form {
 }
 
 .meal-price-entry {
-    margin: 2vh;
+    margin: 2vh 0 5vh 0;
     padding: 1vh;
 }
 
 .tax-rate-entry {
-    margin: 2vh;
+    margin: 2vh 0 5vh 0;
     padding: 1vh;
 }
 
@@ -84,23 +84,25 @@ form {
 
 .buttons {
     text-align: center;
-    margin: 20% 0 0 0;
+    margin: 12% 0 0 0;
 }
 
 .cancel-button {
     border: 1px black solid;
     padding: 4% 8% 4% 8%;
     display: inline-block;
-    margin: 1% 5% 1% 5%;
+    margin: 0% 5% 1% 5%;
     background-color: rgba(128, 128, 128, 0.178);
+    font-size: 1.5rem;
 }
 
 .submit-button {
     border: 1px black solid;
     padding: 4% 8% 4% 8%;
     display: inline-block;
-    margin: 1% 5% 1% 5%;
+    margin: 0% 5% 1% 5%;
     background-color: rgba(128, 128, 128, 0.178);
+    font-size: 1.5rem;
 }
 
 .math-input {

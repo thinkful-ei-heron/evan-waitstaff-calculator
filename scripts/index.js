@@ -27,8 +27,8 @@ function render() {
                 </div>
             </form>
             <div class="buttons">
-                <h3 class="submit-button" id="submit-button">Submit</h3>
-                <h3 class="cancel-button" id="cancel-button">Cancel</h3>
+                <button class="submit-button" id="submit-button">Submit</button>
+                <button class="cancel-button" id="cancel-button">Cancel</button>
             </div>
         </fieldset>
 
@@ -75,9 +75,14 @@ function handleSubmit() {
     });
 }
 
+function handleCancel() {
+    $('#js-main').on('click ')
+}
+
 //handles all main functions
 function main() {
     handleSubmit();
+    handleCancel();
     initialize();
 }
 
